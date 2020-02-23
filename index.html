@@ -58,38 +58,129 @@
     <div class="grid-x grid-padding-x">
 
         <div class="large-12 cell">
-          <h1>Curiosity helped many cats</h1>
+          <h1>Page for demonstration only</h1>
+          <p>Don't read the text on this page as it's complete nonsense.</p>
+          <blockquote>This is just a bit of silliness really - <strong>Freddie Highmore, Finding Neverland (2004)</strong></blockquote>
         </div>
       </div>
-
+<!-- Callout box -->
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
+          <div class="callout" data-closable>
+            <h3>This is a callout container</h3>
+            <p>Callouts can be used to highlight key messages. They can be closed once they have been read</p>
             <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-              </div>
+                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
             </div>
           </div>
         </div>
       </div>
+
+<!-- Expanding accordions using JavaScript -->
+      <div>
+        <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+          <li class="accordion-item is-active" data-accordion-item>
+            <!-- Accordion tab title -->
+            <a href="#" class="accordion-title">Cats</a>
+
+            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+            <div class="accordion-content" data-tab-content>
+              <p>Although cats are our friends, we have to ensure that they do not take advantage of us.</p>
+              <a href="#">See what's in the next one</a>
+            </div>
+          </li>
+          <!-- end of accordion tab -->
+            <li class="accordion-item" data-accordion-item>
+            <!-- Accordion tab title -->
+            <a href="#" class="accordion-title">Marmosets</a>
+
+            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+            <div class="accordion-content" data-tab-content>
+              <p>Marmosets are teeny tiny monkeys.  </p>
+              <a href="#">See what's in the next one</a>
+            </div>
+          </li>
+            <!-- end of accordion tab -->
+            <li class="accordion-item" data-accordion-item>
+            <!-- Accordion tab title -->
+            <a href="#" class="accordion-title">Mice</a>
+
+            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+            <div class="accordion-content" data-tab-content>
+              <p>My favourite of the mouse clan is the dormouse.</p>
+              <a href="#">See what's in the next one</a>
+            </div>
+          </li>
+            <!-- end of accordion tab -->
+            <li class="accordion-item" data-accordion-item>
+            <!-- Accordion tab title -->
+            <a href="#" class="accordion-title">Spiders</a>
+
+            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+            <div class="accordion-content" data-tab-content>
+              <p>Spiders are useful to have around as they eat smaller insects. They also make awesome webs.</p>
+              <a href="#">See what's in the next one</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+<!-- Slideshow carousel -->
+
+      <div class="orbit" role="region" aria-label="Somerset scenes" data-orbit>
+
+            <div class="orbit-wrapper">
+            <ul class="orbit-container">
+<!-- Show for sr is an important instruction for accessibility. It adds sreen reader only text to the element-->
+              <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+              <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+              <li class="is-active orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="images/field.jpg" alt="Crop fields at sunset.">
+                  <figcaption class="orbit-caption">Vallis Vale is at its most beautiful when the sun is setting.</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="images/forest.jpg" alt="A dark forest with the light shining through.">
+                  <figcaption class="orbit-caption">In winter the forest floor is really soft. The smell of pine is made stronger by the rain.</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="images/reflections.jpg" alt="Autumn leaves floating in water, with the reflections of the trees above them.">
+                  <figcaption class="orbit-caption">The autumn leaves floating remind me of the 'po-ta-toes' scene in Lord of the Rings.</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="images/clouds.jpg" alt="Clouds at dusk over a graveyard.">
+                  <figcaption class="orbit-caption">The graveyard is peaceful in the evening.</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="images/lake.jpg" alt="Shearwater lake on an autumn afternoon.">
+                  <figcaption class="orbit-caption">Sometimes you can see the heron at Shearwater.</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0">
+              <span class="show-for-sr">First slide details.</span>
+              <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+            </button>
+            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+            <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+            <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+            <button data-slide="4"><span class="show-for-sr">Fifth slide details.</span></button>
+          </nav>
+
+      </div>
+
+<!-- Grid layout -->
 
       <div class="grid-x grid-padding-x">
         <div class="large-8 medium-8 cell">
