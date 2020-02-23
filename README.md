@@ -18,3 +18,4 @@ The 'navigation' files are being compiled using Sass gulp
 - [Foundation guidance](https://get.foundation/)
 - [Sass guidance](https://sass-lang.com/)
 - [Brower local host](http://localhost:3000/)
+- [Foundation on github](https://github.com/foundation/foundation-sites)
