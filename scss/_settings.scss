@@ -74,6 +74,9 @@ $foundation-palette: (
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
+  tnsm: #673AB7,
+  tnsm-max: #321970,
+  minty: #64FFDA,
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -153,7 +156,7 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
 $header-lineheight: 1.4;
-$header-margin-bottom: 0.5rem;
+$header-margin-bottom: 1.5rem;
 $header-styles: (
   small: (
     'h1': ('font-size': 24),
@@ -175,7 +178,7 @@ $header-styles: (
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.6;
+$paragraph-lineheight: 1.8;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $enable-code-inline: true;
@@ -880,7 +883,7 @@ $tooltip-radius: $global-radius;
 // 55. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
+$topbar-padding: 1rem 0.5rem;
 $topbar-background: $light-violet-75;
 $topbar-submenu-background: $light-violet-75;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
