@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Foundation project</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -66,7 +66,7 @@
 <!-- Callout box -->
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell">
-          <div class="callout" data-closable>
+          <div class="minty callout" data-closable>
             <h3>This is a callout container</h3>
             <p>Callouts can be used to highlight key messages. They can be closed once they have been read</p>
             <div class="grid-x grid-padding-x">
@@ -79,48 +79,49 @@
 
 <!-- Expanding accordions using JavaScript -->
       <div>
-        <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+
+        <ul class="accordion" data-accordion data-multi-expand="false" data-allow-all-closed="true" data-accordion data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" id="deeplinked-accordion">
           <li class="accordion-item is-active" data-accordion-item>
             <!-- Accordion tab title -->
-            <a href="#" class="accordion-title">Cats</a>
+            <a href="#cats" class="accordion-title">Cats</a>
 
             <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
-            <div class="accordion-content" data-tab-content>
+            <div class="accordion-content" data-tab-content id="cats">
               <p>Although cats are our friends, we have to ensure that they do not take advantage of us.</p>
-              <a href="#">See what's in the next one</a>
+              <a href="#marmosets">And tell me about the marmosets</a>
             </div>
           </li>
           <!-- end of accordion tab -->
             <li class="accordion-item" data-accordion-item>
             <!-- Accordion tab title -->
-            <a href="#" class="accordion-title">Marmosets</a>
+            <a href="#marmosets" class="accordion-title">Marmosets</a>
 
             <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
-            <div class="accordion-content" data-tab-content>
+            <div class="accordion-content" data-tab-content id="marmosets">
               <p>Marmosets are teeny tiny monkeys.  </p>
-              <a href="#">See what's in the next one</a>
+              <a href="#mice">And what are mice</a>
             </div>
           </li>
             <!-- end of accordion tab -->
             <li class="accordion-item" data-accordion-item>
             <!-- Accordion tab title -->
-            <a href="#" class="accordion-title">Mice</a>
+            <a href="#mice" class="accordion-title">Mice</a>
 
             <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
-            <div class="accordion-content" data-tab-content>
-              <p>My favourite of the mouse clan is the dormouse.</p>
-              <a href="#">See what's in the next one</a>
+            <div class="accordion-content" id="mice" data-tab-content id="mice">
+              <p>Mice are small mammals with whiskers. My favourite of the mouse clan is the dormouse.</p>
+              <a href="#spiders">Are there any creatures with eight legs</a>
             </div>
           </li>
             <!-- end of accordion tab -->
             <li class="accordion-item" data-accordion-item>
             <!-- Accordion tab title -->
-            <a href="#" class="accordion-title">Spiders</a>
+            <a href="#spiders" class="accordion-title">Spiders</a>
 
             <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
-            <div class="accordion-content" data-tab-content>
-              <p>Spiders are useful to have around as they eat smaller insects. They also make awesome webs.</p>
-              <a href="#">See what's in the next one</a>
+            <div class="accordion-content" data-tab-content id="spiders">
+              <p>Spiders are well known for their ridiculous amount of legs. Many fear them, but they are useful to have around as they eat smaller insects. They also make awesome webs.</p>
+              <a href="#cats">What was in the first one?</a>
             </div>
           </li>
         </ul>
@@ -181,124 +182,33 @@
       </div>
 
 <!-- Grid layout -->
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
-
-          <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                    <span class="input-group-label">.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
-              </div>
-            </div>
-          </form>
+<div class="grid-container full">
+<div class="grid-x grid-padding-x">
+      <div class="cell small-4">
+        <div class="tnsm callout">
+          <h2>Gothic  Ipsum</h2>
+          <p>Ardor dismay austere martyred give way to manorial rapturous spectre brocade evinced gesticulation utterance tumulus? Restless rapturous shorn midnight immortal despondently dolorous tranquil mad bleak personage. Mantle seraph horrid aghast supplicating memento buried. Foreboding dismal disquiet memento in articulo mortis flesh incarnate envious devour go mad. Doomed bedewed; ad Misericordiam gloam passion manorial evil.</p>
+          <a href="http://gothicipsum.com/" class="tnsm-max button goth">I want more goth</a><br/>
         </div>
 
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="button">Simple Button</a><br/>
-          <a href="#" class="success button">Success Btn</a><br/>
-          <a href="#" class="alert button">Alert Btn</a><br/>
-          <a href="#" class="secondary button">Secondary Btn</a></p>
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
-          </div>
-        </div>
       </div>
-    </div>
+        <div class="cell small-4">
+          <div class="tnsm callout">
+            <h2>Cupcake Ipsum</h2>
+            <p>Sweet lemon drops powder tootsie roll bonbon halvah marshmallow. Tiramisu sugar plum gummies jelly. Apple pie oat cake cookie sugar plum muffin marshmallow marzipan. Jelly cookie danish jelly tart sesame snaps.</p>
+            <a href="http://www.cupcakeipsum.com/" class="tnsm-max button">Yum, delicious cupcakes</a><br/>
+          </div>
+        </div>
+          <div class="cell small-4">
+            <div class="tnsm callout">
+              <h2>Zombie Ipsum</h2>
+              <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. </p>
+              <a href="http://www.zombieipsum.com/" class="tnsm-max button">Show me the zombies</a>
+            </div>
+          </div>
+</div>
+</div>
+
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
